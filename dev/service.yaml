@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: shopfront
+  name: shopfrontapp
 spec:
   selector:
-    app: shopfront
+    app: shopfrontapp
   ports:
   - port: 8010
     protocol: TCP
