@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: shopfrontapp
+  name: shopfront
 spec:
   selector:
     matchLabels:
-      app: shopfrontapp
+      app: shopfront
   replicas: 1
   template:
     metadata:
       labels:
-        app: shopfrontapp
+        app: shopfront
     spec:
       containers:
-      - name: shopfrontapp
+      - name: shopfront
         image: gerryik/shopfront:latest
         ports:
         - containerPort: 8010
